@@ -1,0 +1,29 @@
+-- typedish --
+
+use dbcookies;
+insert into typedish(typename) values("Đồ uống");
+insert into typedish(typename) values("Đồ chay");
+insert into typedish(typename) values("Đồ mặn");
+insert into typedish(typename) values("Món tráng miệng");
+
+-- dish --
+
+use dbcookies;
+insert into dish(dishName,recipe,images,rate,description,typedishID,session) values(
+"Cà Phê",
+"Bước 1: Cho 2 gói cà phê G7 hòa tan vào ly, Đong 220 ml sữa tươi full cream milk, sau đó đưa vào lò vi sóng làm nóng trong 45 giây.
+Bước 2: Sau khi làm nóng sữa, ta cho 30ml nước sôi vào cà phê và hòa tan cà phê trong nước sôi, Đổ sữa nóng vào ca đánh sữa và tiến hành đánh sữa bằng máy đánh bọt sữa cầm tay.
+Bước 3: Lắc đều bọt sữa cho sữa mềm và mịn, sau đó rót tạo hình lên cà phê",
+"https://image.cooky.vn/recipe/g6/55850/s640/b4677e1f-60be-4091-a9c4-b4bfcf2ecc73.jpeg",
+"Dễ",
+"Với người yêu cà phê espresso, latte art không chỉ là thức uống thơm ngon mà còn là một tác phẩm nghệ thuật thu nhỏ thú vị. Mỗi ly latte gửi gắm tất cả kinh nghiệm, kỹ năng và tình yêu của người barista dành cho cà phê. Mời bạn cùng Cooky khám phá cách một barista chuyên nghiệp chuẩn bị một ly latte art nhé!",
+1,
+"Mùa Hè"
+)
+
+-- ingredient --
+insert into ingredients(ingredientName) values("Hạt cà phê");
+insert into ingredients(ingredientName) values("Sữa thanh trùng Đà Lạt");
+
+insert into dishdetail values(1,1,18.0,"gram");
+insert into dishdetail values(1,2,200.0,"ml");
