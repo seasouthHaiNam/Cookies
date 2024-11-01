@@ -31,3 +31,9 @@ CREATE TABLE dishdetail (
     FOREIGN KEY (dishID) REFERENCES dish(dishID),
     FOREIGN KEY (ingredientID) REFERENCES ingredients(ingredientID)
 );
+create table imagedetail(
+imageid int primary key auto_increment,
+dishid int,
+imagelink varchar(255),
+FOREIGN KEY(dishid) REFERENCES dish(dishid)			
+);
